@@ -1,0 +1,32 @@
+{%extends 'base.html'%}
+{%import 'macros.html' as ul %}
+{%block navbar%}
+{{nav.top.render()}}
+
+
+
+{%endblock navbar%}
+
+{%block content2%}
+<div class=""page-header>
+    <div class="container">
+        <h1>{{title}}</h1>
+    </div>
+</div>
+
+<form>
+    {{ul.input('text','username','zhangshan')}}
+    {{ul.input('password','password','1234')}}
+</form>
+{%endblock content2%}
+
+
+
+{%block footer%}
+<hr/>
+{{ super() }}
+{%endblock footer%}
+
+
+
+</html>
